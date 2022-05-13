@@ -1,0 +1,145 @@
+header {
+    padding-bottom: 30px;
+}
+
+
+header .header-content {
+    margin-top: 50px;
+}
+
+
+main .container{
+    display:flex;
+    flex-direction: column;
+}
+
+.book {
+    padding: 30px;
+    display:flex;
+    flex-wrap: wrap;
+    position:relative;
+    justify-content:center;
+    gap: 50px;
+    padding-top: 80px;
+}
+
+.book div{
+    flex-grow: 1;
+}
+
+.book .book-image{
+    max-height: 500px;
+    height: auto;
+    text-align :center;
+    padding: 10px;
+    border-right: 5px solid var(--second-color);
+    box-sizing: border-box;
+}
+
+.heart {
+    font-size: 45px;
+    color: #636363;
+    position: absolute;
+    cursor: pointer;
+    top: 25px;
+    left: 10px;
+}
+
+.loved {
+    color: var(--light-color) !important;
+}
+
+.book .book-image img{
+    max-height: 450px;
+    width: 280px;
+    padding: 15px;
+    border-bottom: 4px solid var(--light-color);
+}
+
+.book .book-info {
+    display:flex;
+    flex-direction: column;
+    font-size: 30px;
+    font-family: sans-serif;
+    min-height: 500px;
+    color: var(--second-color);
+}
+
+.book .book-info span{
+    color: var(--light-color);
+    margin-left: 30px;
+    font-size: 25px;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.book-info .author span{
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+}
+
+.book-info .author .date{
+    font-size: 25px;
+    margin-top: 40px;
+    display:flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.book-info .author .date span{
+    margin-right: 50px;
+    font-size: 25px;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.document {
+    display:flex;
+    flex-direction: column;
+}
+
+.document a {
+    color: var(--light-color);
+    text-decoration: underline;
+}
+
+.view a{
+    margin-left: 10px;
+}
+
+.download h4{
+    margin-bottom: 10px;
+}
+
+.download a:nth-of-type(2){
+    margin-left: 20px;
+}
+
+.related {
+    border-top: 4px solid var(--light-color);
+    padding-top: 30px;
+}
+
+.related h4 {
+    margin: 15px;
+    font-family: sans-serif;
+    font-size: 30px;
+    border-bottom: 3px solid var(--second-color)
+}
+
+.bookshelves, .subjects {
+    padding: 15px;
+    display:flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.sub {
+    background-color: var(--second-color);
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s all ease-in-out;
+    color: var(--main-color);
+}
+
+.sub:hover{
+    text-decoration: underline;
+    color: var(--light-color);
+}

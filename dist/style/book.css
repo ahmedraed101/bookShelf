@@ -1,0 +1,88 @@
+/* Start show books section */
+.browse-heading{
+    padding: 10px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: var(--light-color);
+    border-bottom: 2px solid var(--second-color);
+}
+
+#books .container {
+    display:flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* end show books section */
+
+/* Start Book */
+.book{
+    background-color: var(--second-color);
+    display: inline-block;
+    position: relative;
+    padding: 20px;
+    margin: 20px auto;
+    border: 1px solid var(--light-color);
+    color: white;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    align-items: center;
+    /* justify-content: space-between; */
+    text-align: center;
+    line-height: 25px;
+    letter-spacing: 2px;
+    transition: 0.3s ease-in-out;
+}
+
+.book:hover {
+    box-shadow:20px 18px 10px 0px rgb(25 1 9 / 76%);
+    transform: scale(1.03) translateY(-5%)
+}
+
+.book i{
+    position: absolute;
+    left: 20px;
+    font-size: 35px;
+    cursor: pointer;
+    color:var(--main-color);
+    transition: 0.3s all ease-in-out;
+}
+
+
+.book i:hover{
+    color: var(--light-color);
+}
+
+.loved {
+    color: var(--light-color) !important;
+}
+
+.book .image {
+    width: 100%;
+    padding: 10px;
+    border-bottom: 3px solid var(--light-color);
+}
+.book img {
+    width: 150px;
+    max-height: 200px;
+    cursor: pointer;
+    border: 1px solid gray;
+    height: auto;
+}
+.book .info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    gap: 20px;
+}
+.book h3 {
+    cursor:pointer;
+}
+.book h4{
+    font-family: 'Dancing Script', cursive;
+}
+/* End Book */

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/book.png" type="image/x-icon">
+    <title>Online Library</title>
+    <!-- Normalize Css -->
+    <link rel="stylesheet" href="./style/normalize.css">
+    <!-- FontAwsome library -->
+    <link rel="stylesheet" href="./style/all.min.css">
+    <!-- Css files -->
+    <link rel="stylesheet" href="style/base.css">
+    <!-- <link rel="stylesheet" href="style/main.css"> -->
+    <link rel="stylesheet" href="style/showbook.css">
+    <!-- google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Scripts -->
+    <!-- <script src="./scripts/book.js" defer></script>
+    <script src="./scripts/showbook.js" defer></script> -->
+    <script src="./scripts/showbook-bundle.js" defer></script>
+</head>
+<body>
+    <span class="up"><i class="fas fa-angle-double-up"></i></span>
+    <header>
+        <div class="container">
+            <nav>
+                <i class="fas fa-bars toggle-menu"></i>
+                <ul class="links">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/likes.html">Likes</a></li>
+                    <li><a id="tomain">Books</a></li>
+                    <li><a id="tofooter">About</a></li>
+                </ul>
+                <div class="logo">
+                    <img src="./images/book.png" alt="online library logo">
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- the main part -->
+    <main id="main">
+        <div class="container">
+            <div class="loading hide">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+            <div class="book hide">
+                <i class="fas fa-heart heart"></i>
+                <div class="book-image">
+                </div>
+                <div class="book-info">
+                    <div class="title">
+                        book title: <span id="book-title"></span>
+                    </div>
+                    <div class="author">
+                        by <span id="author-name"></span>
+                        <div class="date">
+                            birth year: <span id="birth-year"></span>
+                            death year: <span id="death-year"></span>
+                        </div>
+                    </div>
+                    <div>Language: <span class="language"></span></div>
+                    <div class="document">
+                        <div class="view">
+                            <h4> Read Online <a href="http://" target="_blank" rel="noopener noreferrer">here</a></h4>
+                        </div>
+                        <div class="download">
+                            <h4>Download</h4>
+                            <a href="http://" target="_blank" rel="noopener noreferrer" id="kindle">kindle</a>
+                            <a href="http://" target="_blank" rel="noopener noreferrer" id="epub">epub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="related-heading"></h2>
+            <div class="related">
+                <h4>Related Subjects</h4>
+                <div class="subjects">
+                </div>
+                <h4>Bookshelves</h4>
+                <div class="bookshelves">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <div class="copyright">
+            By <span>-ahmed raed <span class="light"> 101</span>-</span>
+        </div>
+        <div class="findme">
+            <span>contact me <i class="fas fa-angle-double-down"></i></span>
+            <div class="social">
+                <a href="https://www.linkedin.com/in/ahmedraed101/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/ahmedraed101" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                <a href="mailto:ahmedraed101.work@gmail.com"><i class="far fa-at"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
